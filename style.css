@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    color: black;
+}
+.div a{
+    text-decoration: none;
+    color: black;
+}
+.div a:active{
+    color: crimson;
+}
+body{ 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #445566;
+}
+    /* Box css */
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    margin: auto;
+}
+@keyframes square {
+    0%{
+        left: -500px;
+        transform: rotate(180deg);
+        transform: skew(1.2);
+    }
+    50%{
+        left: 500px;
+        transform: rotate(-180deg);
+        background-color: brown;
+        transform: skew(1.5);
+
+    }
+    100%{
+        left: -500px;
+        transform: rotate(360deg);
+        background-color: blue;
+        transform: skew(1.8);
+
+    }
+}
+        /* Container css */
+.container{
+    position: relative; 
+    width: 150px;
+    height: 150px;
+    background-color: orangered;
+    animation-name: small;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+@keyframes small {
+    0%{
+       transform: scale(1); 
+    }
+    50%{
+        transform: scale(2);
+        background-color: blueviolet;
+
+    }
+    100%{
+        transform: scale(3); 
+        background-color: orangered;
+    }
+}
+        /* Heart css */
+.heart{
+    position: relative;
+    color: red;
+    width: 300px;
+    height: 300px;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    margin: auto;
+}
+@keyframes heart {
+    0%{
+        font-size: 300px;
+        color: red;
+    }
+    50%{
+        font-size: 350px;
+        color: aliceblue;
+    }
+    100%{
+        font-size: 300px;
+        color: red;
+    }
+}
+        /* spinner css */
+.spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 200px auto;
+    width: 300px;
+    height: 300px;
+    background-color: #445566;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-top: 10px dotted white;
+    animation-name: spinner ;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
